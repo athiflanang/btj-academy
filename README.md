@@ -24,10 +24,10 @@
 - input inside Docker File
 
 > FROM python:3
-WORKDIR /app
-COPY programsimple.py /app/
-EXPOSE 8081
-CMD ["python", "programsimple.py"
+WORKDIR /app;
+COPY programsimple.py /app/;
+EXPOSE 8081;
+CMD ["python", "programsimple.py";
 
 ### Run
 
