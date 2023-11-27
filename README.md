@@ -23,11 +23,11 @@
     athiflananguntoro@btj-academy:~/btj-academy$ nano Dockerfile
 - input inside Docker File
 
-> FROM python:3
-WORKDIR /app;
-COPY programsimple.py /app/;
-EXPOSE 8081;
-CMD ["python", "programsimple.py";
+> FROM python:3 <br>
+WORKDIR /app <br>
+COPY programsimple.py /app/ <br>
+EXPOSE 8081 <br>
+CMD ["python", "programsimple.py" <br>
 
 ### Run
 
