@@ -17,14 +17,16 @@
     sudo nano inventory_athif
 
 - Input inside Inventory
-
-> [mentor_vm]
+```
+[mentor_vm] <br>
 mentor ansible_host=10.184.0.100 ansible_user=athiflananguntoro db_port=3306
-> 
-> [group_name1] host1 ansible_host=10.184.0.100 ansible_user=athiflananguntoro variable1=value1 variable2=value2
-> 
-> [group_name2] host2 ansible_host=10.184.0.100 ansible_user=athiflananguntoro variable3=value3 variable4=value4
-
+ 
+[group_name1] <br>
+host1 ansible_host=10.184.0.100 ansible_user=athiflananguntoro variable1=value1 variable2=value2
+ 
+[group_name2] <br>
+host2 ansible_host=10.184.0.100 ansible_user=athiflananguntoro variable3=value3 variable4=value4
+```
 ### Run
 
     ansible-inventory -i inventory_athif --list
