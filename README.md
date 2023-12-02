@@ -46,24 +46,24 @@ if __name__ == '__main__':
 
 ## Answer 2
 
-**Buatlah satu playbook dengan beberapa task yaitu : 
-	1) Menyalin file dari local ke server server btj-academy
-  2) Build docker image untuk example python app
-  3) Jalankan container yang sudah di build**
+**Buatlah satu playbook dengan beberapa task yaitu ( 
+	1. Menyalin file dari local ke server server btj-academy,
+  	2. Build docker image untuk example python app,
+  	3. Jalankan container yang sudah di build)**
 
 ### Create Docker file
 
     nano Deploy_Dockerfile
     
 - Input inside Dockerfile
-```
-    FROM python:3.8
-    WORKDIR /app
-    COPY . /app
-    RUN pip install --no-cache-dir -r requirements.txt
-    EXPOSE 8081
-    CMD ["python", "examplepyapp.py"]
-```
+	```
+	FROM python:3.8
+	WORKDIR /app
+	COPY . /app
+	RUN pip install --no-cache-dir -r requirements.txt
+	EXPOSE 8081
+	CMD ["python", "examplepyapp.py"]
+	```
 
 ### Run
 
