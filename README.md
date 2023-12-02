@@ -21,7 +21,7 @@
 
 ### Add routing and custom port to python app
 - Input inside Inventory
-
+```
     from flask import Flask
     
     app = Flask(__name__)
@@ -40,7 +40,7 @@
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=9081)
-
+```
 ### Clone github repository
     git clone https://github.com/athiflanang/btj-academy.git
 
@@ -56,14 +56,14 @@ if __name__ == '__main__':
     nano Deploy_Dockerfile
     
 - Input inside Dockerfile
-
+```
     FROM python:3.8
     WORKDIR /app
     COPY . /app
     RUN pip install --no-cache-dir -r requirements.txt
     EXPOSE 8081
     CMD ["python", "examplepyapp.py"]
-
+```
 
 ### Run
 
